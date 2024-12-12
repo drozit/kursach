@@ -1,0 +1,192 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Современный шрифт */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f9fafc; /* Нежный светло-синий фон страницы */
+    color: #2e3a59; /* Темно-синий текст */
+}
+
+header {
+    background: linear-gradient(90deg, #4c6ef5, #41e778); /* Градиент для фона */
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень под заголовком */
+    position: sticky; /* Закрепление заголовка при прокрутке */
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Расстояние между пунктами меню */
+}
+
+nav li {
+    position: relative;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Полупрозрачный фон при наведении */
+}
+
+main {
+    padding: 20px;
+    flex: 1;
+    background-color: #ffffff; /* Белый фон для контента */
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для блока */
+    margin: 20px;
+}
+
+footer {
+    background-color: #10cfa9; /* Темно-синий фон подвала */
+    color: #f0f4ff;
+    text-align: center;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px; /* Закругленные углы таблицы */
+    overflow: hidden; /* Скрываем углы за пределами таблицы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень таблицы */
+    background-color: #ffffff; /* Белый фон таблицы */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+th, td {
+    padding: 12px 15px; /* Просторные ячейки */
+    text-align: left;
+}
+
+th {
+    background-color: #4c6ef5; /* Ярко-синий фон для заголовков */
+    color: #ffffff; /* Белый текст для заголовков */
+    text-transform: uppercase; /* Преобразование текста в заглавные буквы */
+    font-size: 14px;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9fafc; /* Светлый фон для чётных строк */
+}
+
+tr:hover {
+    background-color: #eaf0ff; /* Светло-голубой фон при наведении */
+    transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+td {
+    color: #333; /* Тёмно-серый текст */
+    font-size: 14px;
+}
+
+td:last-child {
+    text-align: center; /* Центрируем действия */
+}
+
+form {
+    background-color: #ffffff;
+    border: 1px solid #e3e6f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #364fc7; /* Синий цвет текста меток */
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #e3e6f0;
+    border-radius: 4px;
+    background-color: #f9fafc; /* Светло-синий фон */
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #4c6ef5; /* Синяя граница при фокусе */
+    box-shadow: 0 0 5px rgba(76, 110, 245, 0.5);
+}
+
+button {
+    background-color: #4c6ef5; /* Синий цвет кнопки */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Плавное изменение цвета */
+}
+
+button:hover {
+    background-color: #364fc7; /* Темно-синий цвет при наведении */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav li {
+    margin: 0 15px;
+}
+
+header nav a, header nav span {
+    font-size: 18px;
+    color: #f0f4ff;
+}
+
+header nav a[href="logout.php"] {
+    color: #ff6b6b; /* Ярко-красный для ссылки "Выйти" */
+}
+
+header nav a[href="logout.php"]:hover {
+    color: #d9534f; /* Темно-красный при наведении */
+}
+
+span {
+    color: #4c6ef5; /* Синий текст для выделения */
+    font-weight: bold;
+}
